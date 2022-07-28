@@ -45,7 +45,7 @@ const HomeScreen = ({ navigation }) => {
       </View>
 
       <MainList />
-      <Button color="#007F5F" mode="Contained" onPress={logout}>
+      <Button color="#007F5F" onPress={logout}>
         Logout
       </Button>
     </ScrollView>
