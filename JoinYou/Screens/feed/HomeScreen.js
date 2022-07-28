@@ -8,6 +8,7 @@ import { Text, Button } from "react-native-paper";
 const HomeScreen = ({ navigation }) => {
   const authContext = useContext(AuthContext);
   const user = authContext.user;
+  const logout = authContext.logout;
 
   //const navigation = useNavigation();
 
@@ -44,6 +45,9 @@ const HomeScreen = ({ navigation }) => {
       </View>
 
       <MainList />
+      <Button color="#007F5F" onPress={logout}>
+        Logout
+      </Button>
     </ScrollView>
   );
 };
